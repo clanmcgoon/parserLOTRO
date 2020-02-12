@@ -138,7 +138,6 @@ class App(Frame):
       print(tkstring1)
       allLines = "Nothing read"
      
-    dataline=""
     for line in allLines:
       aline = line.split("]")
       if nextLine:
@@ -152,8 +151,6 @@ class App(Frame):
               someint = int(z[1][0])                
             else:
               someint = 1
-              
-              
               
             if "Gold" in line:
               self.Summaries[currentFlora]["Gold"]+= someint
